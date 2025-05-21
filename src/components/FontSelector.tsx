@@ -11,7 +11,6 @@ const fontOptions = [
   { name: 'Cursive', value: 'cursive' },
   { name: 'Comic Sans', value: '"Comic Sans MS", cursive, sans-serif' },
   { name: 'Playfair Display', value: '"Playfair Display", serif' },
-  { name: 'Raleway', value: '"Raleway", sans-serif' },
   { name: 'Indie Flower', value: '"Indie Flower", cursive' },
   { name: 'Roboto', value: '"Roboto", sans-serif' },
   { name: 'Open Sans', value: '"Open Sans", sans-serif' },

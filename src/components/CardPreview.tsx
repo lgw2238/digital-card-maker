@@ -19,7 +19,10 @@ const CardPreview: React.FC = () => {
   return (
     <div className="w-full max-w-md mx-auto">
       <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">명함 미리보기</h2>
+        <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-white mb-2 p-2 rounded-lg" style={{ background: 'linear-gradient(to right, #2563eb, #7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          명함 미리보기
+        </h2>
+        <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-3"></div>
         <p className="text-gray-600">생성될 명함을 미리 확인해보세요!</p>
       </div>
       
@@ -29,7 +32,7 @@ const CardPreview: React.FC = () => {
         className="w-full aspect-[1.8/1] rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-[1.02] mb-6"
         style={cardStyle}
       >
-        <div className="w-full h-full flex flex-col justify-between p-6 bg-gradient-to-b from-black/20 to-black/40">
+        <div className={`w-full h-full flex flex-col justify-between p-6 ${needsDarkText ? 'bg-gradient-to-b from-blue-200 to-purple-400 ' : 'bg-gradient-to-b from-black/40 to-gray-800/40'}`}>
           {/* Top section with title */}
           <div className="text-center">
             <h2 className={`text-2xl font-bold mb-1 ${needsDarkText ? 'text-gray-800' : 'text-white'}`}>

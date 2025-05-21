@@ -55,6 +55,21 @@ const CardForm: React.FC = () => {
         </div>
 
         <div>
+          <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-1">
+            주소
+          </label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            value={cardData.address}
+            onChange={handleInputChange}
+            placeholder="주소지, 혹은 회사명을 입력하세요."
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors bg-white/50"
+          />
+        </div>
+
+        <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
             연락 번호
           </label>
