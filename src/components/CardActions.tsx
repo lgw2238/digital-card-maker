@@ -20,9 +20,7 @@ const CardActions: React.FC = () => {
 
       // Generate the image
       const dataUrl = await toPng(cardElement, { quality: 0.95 });
-      
-      // For demonstration, we'll just create a temporary URL
-      // In a real app, you would upload this to a server and get a permanent URL
+    
       setCardUrl(dataUrl);
       
       // Download the image
@@ -42,12 +40,11 @@ const CardActions: React.FC = () => {
   };
 
   const shareToKakao = () => {
-    // In a real implementation, you would use the Kakao SDK here
-    // This is a placeholder to demonstrate the concept
+    // 실제 카카오톡 공유하기 sdk 연결 --
     alert('해당 기능은 아직 구현중에 있습니다. 잠시만 기다려주세요.');
   };
 
-  // Generate a simplified QR code value containing essential information
+  // QR 코드 생성
   const getQRCodeValue = () => {
     const essentialInfo = {
       name: cardData.title || 'Business Card',

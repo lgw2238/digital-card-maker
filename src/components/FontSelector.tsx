@@ -2,7 +2,7 @@ import React from 'react';
 import { useCardContext } from '../context/CardContext';
 import { Type } from 'lucide-react';
 
-// Font options - all system fonts that should be available across devices
+// 폰트 옵션
 const fontOptions = [
   { name: 'Default', value: 'system-ui, -apple-system, sans-serif' },
   { name: 'Serif', value: 'Georgia, Times New Roman, serif' },

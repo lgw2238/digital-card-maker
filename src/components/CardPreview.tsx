@@ -13,7 +13,7 @@ const CardPreview: React.FC = () => {
     backgroundPosition: 'center',
   };
 
-  // Function to determine if we need dark text based on background
+  // TODO : 기본 배경화면 이미지 - 이미지 없는 경우 background 컬러 변경도 추후 적용
   const needsDarkText = !cardData.backgroundImage || cardData.backgroundImage.includes('light');
 
   return (
