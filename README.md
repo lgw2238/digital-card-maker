@@ -26,3 +26,12 @@ npm install
 
 # 개발 서버 실행
 npm run dev
+
+
+### 도메인 이미지
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="public/디지털 카드 제작기 left.png" alt="Image 1" width="200" height="200"/>
+  <img src="public/디지털 카드 제작기 right.png" alt="Image 2" width="200" height="200"/>
+  <img src="public/디지털 카드 제작기 3.png" alt="Image 3" width="200" height="200"/>
+</div>
