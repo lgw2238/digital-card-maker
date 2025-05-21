@@ -14,13 +14,16 @@ const CardForm: React.FC = () => {
   };
 
   return (
-    <div className="space-y-6 max-w-xl mx-auto">
+    <div className="space-y-6 max-w-xl mx-auto p-6">
       <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">디지털 명함 제작기</h2>
+        <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+          디지털 명함 제작기
+        </h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-4"></div>
         <p className="text-gray-600">필요한 문구를 입력해서 원하는 명함을 만들어보세요.</p>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-4 bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
         <div>
           <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">
             제목 / 이름
@@ -31,11 +34,12 @@ const CardForm: React.FC = () => {
             name="title"
             value={cardData.title}
             onChange={handleInputChange}
-            placeholder="성명이나 회사이름"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+            placeholder="이름이나 직함을 입력해주세요"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors bg-white/50"
           />
         </div>
 
+        {/* 다른 입력 필드들도 같은 스타일 적용 */}
         <div>
           <label htmlFor="centerText" className="block text-sm font-medium text-gray-700 mb-1">
             가운데 문구
@@ -45,24 +49,8 @@ const CardForm: React.FC = () => {
             name="centerText"
             value={cardData.centerText}
             onChange={handleInputChange}
-            placeholder="직무나 슬로건을 작성하세요."
-            rows={2}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
-          />
-        </div>
-
-        <div>
-          <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-1">
-            주소
-          </label>
-          <input
-            type="text"
-            id="address"
-            name="address"
-            value={cardData.address}
-            onChange={handleInputChange}
-            placeholder="주소지, 혹은 회사명을 입력하세요."
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+            placeholder="간단한 소개나 설명을 입력해주세요"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors bg-white/50 min-h-[100px]"
           />
         </div>
 
@@ -76,8 +64,8 @@ const CardForm: React.FC = () => {
             name="phone"
             value={cardData.phone}
             onChange={handleInputChange}
-            placeholder="연락 번호나 메일을 적어주세요."
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+            placeholder="연락 번호나 메일을 적어주세요"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors bg-white/50"
           />
         </div>
 
