@@ -26,7 +26,7 @@ npm install
 
 # 개발 서버 실행
 npm run dev
-
+```
 
 ### 도메인 이미지
 
